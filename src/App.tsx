@@ -166,12 +166,29 @@ function App() {
               <h1 className="text-4xl md:text-[3.5rem] font-extrabold cursor-default mb-6 leading-relaxed">
                 Hi, I'm Abe, a software developer with 3+ years of experience.
               </h1>
-              <p className="text-lg font-medium">
+              <p className="text-lg font-medium mb-6 leading-relaxed">
                 I love to be at the forefront of technological innovation and
                 enjoy creating delightful user experiences. I ensure my passion
                 for software development has a positive impact to the lives of
                 many.
               </p>
+              <div className="flex gap-6">
+                <a href="https://www.linkedin.com/in/abe-suni-caymo-48b7ab169/">
+                  <div className="w-10 h-10 md:w-14 md:h-14 bg-secondary rounded-full flex justify-center items-center text-accent-1">
+                    <Icons.linkedin className="md:w-5 md:h-5" />
+                  </div>
+                </a>
+                <a href="https://github.com/abetoots">
+                  <div className="w-10 h-10 md:w-14 md:h-14 bg-secondary rounded-full flex justify-center items-center text-accent-1 ">
+                    <Icons.gitHub className="md:w-5 md:h-5" />
+                  </div>
+                </a>
+                <a href="mailto:caymo.abesuni@gmail.com">
+                  <div className="w-10 h-10 md:w-14 md:h-14 bg-secondary rounded-full flex justify-center items-center text-accent-1">
+                    <Icons.email className="md:w-7 md:h-7" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           <div className="paper relative hidden md:block overflow-hidden">
