@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .paper {
+    @apply bg-transparent shadow-lg border;
+  }
+}
+
+@layer utilities {
+  .visually-hidden {
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+
+  .visually-shown {
+    position: unset !important;
+    overflow: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    clip: auto;
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary: rgb(21, 222, 189);
+
+  --secondary: rgb(29, 47, 111);
+  --secondary-foreground: white;
+
+  --background: white;
+  --foreground: black;
+
+  --accent-1: rgb(227, 232, 241);
+  --accent-2: rgb(219, 127, 142);
+
+  --blob-gradient: linear-gradient(to right, var(--primary), var(--accent-1));
+
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito";
+}
