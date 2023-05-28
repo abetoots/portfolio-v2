@@ -294,8 +294,11 @@ const ProjectCard = ({
             transform: isEnteringContainer ? "translateZ(70px)" : "",
           }}
         >
-          <a href={href} target="_blank">
+          <a href={href} target="_blank" className="flex gap-2 items-center">
             {title}
+            <div className={cn(buttonVariants({ variant: "secondary" }))}>
+              <span className="mr-2">Visit</span> <Icons.externalLink />
+            </div>
           </a>
         </h3>
         <p
