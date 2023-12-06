@@ -45,7 +45,7 @@
 
   --blob-gradient: linear-gradient(to right, var(--primary), var(--accent-1));
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
